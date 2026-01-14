@@ -1,33 +1,49 @@
-### V16 Slim Desk
+# SlimDesk for Frappe v16
 
-Office 365 style sidebar
+**A streamlined, persistent sidebar navigation for Frappe & ERPNext.**
 
-### Installation
+## The Problem
+In the standard Frappe Desk, navigating between different modules (e.g., *Buying* to *Selling*) often requires the user to click "Home" or the Desk icon, returning to the main grid view. This context switch causes users to lose track of their current task and breaks the flow of work.
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+## The Solution
+**SlimDesk** injects a permanent, unobtrusive sidebar on the left side of every application page. It mirrors the standard Desk icons but keeps them accessible at all times.
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
-bench install-app v16_slim_desk
-```
+### Key Features
+-   **Persistent Navigation:** Switch modules with 1 click from anywhere.
+-   **Context Retention:** No need to return to the "Desktop" grid.
+-   **Smart Icons:** 
+    -   Professional "Subtle" Grayscale styling by default.
+    -   Full color on hover/active.
+    -   **Dynamic Fallback:** Automatically detects correct icons for Core ERPNext modules (e.g., Manufacturing, Assignments) and standard FontAwesome icons.
+-   **Matches Desk Order:** workspaces are sorted alphabetically to match the standard Desk grid configuration.
+-   **Customizable:**
+    -   Reorder icons via Drag & Drop.
+    -   Add custom links or shortcuts.
+    -   Toggle visibility of items.
 
-### Contributing
+## Installation
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+1.  **Get the App**
+    ```bash
+    bench get-app v16_slim_desk https://github.com/your-org/v16_slim_desk
+    ```
 
-```bash
-cd apps/v16_slim_desk
-pre-commit install
-```
+2.  **Install on Site**
+    ```bash
+    bench --site [site-name] install-app v16_slim_desk
+    ```
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+3.  **Update Assets**
+    ```bash
+    bench build --app v16_slim_desk
+    bench clear-cache
+    ```
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+## Usage
+Once installed, the sidebar appears automatically for all System Users. 
+-   **Customize:** Click the "Edit" (Pencil) icon at the bottom of the sidebar to reorder items or add new shortcuts.
+-   **Home:** Click the top "Grid" icon to return to the standard Frappe Desk.
 
-### License
-
-mit
+## Compatibility
+-   **Frappe Framework:** v15, v16+
+-   **ERPNext:** v15, v16+
