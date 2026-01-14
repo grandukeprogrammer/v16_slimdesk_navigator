@@ -1,49 +1,47 @@
-# SlimDesk for Frappe v16
-
-**A streamlined, persistent sidebar navigation for Frappe & ERPNext.**
+# SlimDesk Navigator for Frappe v16
+**Persistent, Unobtrusive Sidebar Navigation to Solve Context Switching Fatigue.**
 
 ## The Problem
-In the standard Frappe Desk, navigating between different modules (e.g., *Buying* to *Selling*) often requires the user to click "Home" or the Desk icon, returning to the main grid view. This context switch causes users to lose track of their current task and breaks the flow of work.
+In the standard Frappe v16 UI, navigating between different modules (e.g., *Buying* to *Selling*) often requires returning to the main "Home" grid or Desk. This constant context switching interrupts workflow and makes it easy to lose track of open tasks.
 
 ## The Solution
-**SlimDesk** injects a permanent, unobtrusive sidebar on the left side of every application page. It mirrors the standard Desk icons but keeps them accessible at all times.
+**SlimDesk Navigator** injects a permanent, slim sidebar on the left side of every application page. It acts as a visual anchor, allowing you to jump between modules in **one click** without losing your current page context.
 
 ### Key Features
--   **Persistent Navigation:** Switch modules with 1 click from anywhere.
--   **Context Retention:** No need to return to the "Desktop" grid.
--   **Smart Icons:** 
-    -   Professional "Subtle" Grayscale styling by default.
-    -   Full color on hover/active.
-    -   **Dynamic Fallback:** Automatically detects correct icons for Core ERPNext modules (e.g., Manufacturing, Assignments) and standard FontAwesome icons.
--   **Matches Desk Order:** workspaces are sorted alphabetically to match the standard Desk grid configuration.
--   **Customizable:**
-    -   Reorder icons via Drag & Drop.
-    -   Add custom links or shortcuts.
-    -   Toggle visibility of items.
+*   **Persistent & Unobtrusive:** Always accessible, taking up minimal screen real estate (60px).
+*   **Dark Theme:** Sleek sidebar aesthetics with a dedicated dark mode (`#1a202c`) and high-contrast active states.
+*   **Smart Shortcuts:** Add shortcuts to **DocTypes, Reports, or Pages**.
+*   **Context Retention:** Switch apps without returning to the "Desktop" grid.
+*   **Auto-Discovery:** Automatically detects icons for your installed apps.
+*   **Fully Customizable:** Drag & drop reordering via a simple "Edit" dialog.
+
+## Screenshots
+![SlimDesk Sidebar](https://placeholder-listing-image.png)
+*(Add a screenshot of the sidebar in action here)*
 
 ## Installation
 
 1.  **Get the App**
     ```bash
-    bench get-app v16_slim_desk https://github.com/your-org/v16_slim_desk
+    bench get-app v16_slim_desk https://github.com/zerodiscount/v16_slimdesk_navigator
     ```
 
 2.  **Install on Site**
     ```bash
-    bench --site [site-name] install-app v16_slim_desk
+    bench --site [your-site] install-app v16_slim_desk
     ```
 
-3.  **Update Assets**
+3.  **Build Assets**
     ```bash
     bench build --app v16_slim_desk
     bench clear-cache
     ```
 
 ## Usage
-Once installed, the sidebar appears automatically for all System Users. 
--   **Customize:** Click the "Edit" (Pencil) icon at the bottom of the sidebar to reorder items or add new shortcuts.
--   **Home:** Click the top "Grid" icon to return to the standard Frappe Desk.
+*   **Access:** The sidebar appears automatically for all System Users.
+*   **Customize:** Click the **Edit (Pencil)** icon at the bottom.
+*   **Home:** Click the top **Grid** icon to return to the standard Frappe Desk.
 
 ## Compatibility
--   **Frappe Framework:** v15, v16+
--   **ERPNext:** v15, v16+
+*   **Frappe Framework:** v15, v16+
+*   **ERPNext:** v15, v16+
