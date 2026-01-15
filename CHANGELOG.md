@@ -1,5 +1,9 @@
 # Changelog
 
+## [v3.43] - 2026-01-15
+### Fixed
+- **UI:** Fixed "Restore Defaults" button visibility by using the native `add_custom_action` API instead of direct DOM manipulation.
+
 ## [v3.42] - 2026-01-15
 ### Added
 - **Restore Defaults:** Added a button to the "Customize Sidebar" dialog that allows users to reset their layout to the system defaults (clearing all custom shortcuts and re-fetching auto-discovered workspaces).

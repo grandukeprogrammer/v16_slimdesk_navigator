@@ -320,14 +320,13 @@ frappe.ui.SlimDesk = class SlimDesk {
 d.add_custom_action('Add Shortcut', () => this.prompt_add_item(d, 'shortcut'));
 d.add_custom_action('Add Workspace', () => this.prompt_add_item(d, 'workspace'));
 
-// Restore Defaults Button (Left-aligned or secondary)
-$('<button class="btn btn-default btn-xs" style="margin-left: 10px;">Restore Defaults</button>')
-    .appendTo(d.footer.find('.custom-actions'))
-    .on('click', () => {
-        frappe.confirm('Are you sure you want to restore the default sidebar layout? This will remove all custom shortcuts.', () => {
-            this.restore_defaults(d);
-        });
+// Restore Defaults Button
+d.add_custom_action('Restore Defaults', () => {
+    frappe.confirm('Are you sure you want to restore the default sidebar layout? This will remove all custom shortcuts.', () => {
+        this.restore_defaults(d);
     });
+}, 'btn-danger btn-xs'); // Try generic class or styling later if needed. Standard is fine.
+
 
 d.show();
     }
