@@ -3,11 +3,10 @@
 ## Backlog
 - [ ] 
 
-## In Progress
-- [ ] **Feature: Restore Defaults Button**
-    - **Goal:** Allow users to reset sidebar to original state (all auto-discovered workspaces).
-    - **Use Case:** User accidentally removes all items or wants to start fresh.
-    - **Implementation:** Add button to "Customize" dialog that clears user config and re-fetches defaults.
+## Deferred / Known Issues
+- [ ] **Feature: Restore Defaults Button** (v3.42-v3.46)
+    - **Status:** Backend API implemented. Frontend Button persistently invisible or causes layout regressions in Production.
+    - **Goal:** Allow users to reset sidebar to original state.
 
 ## Completed
 - [x] **Bug: Icons Unresponsive after System Reload** (v3.41) **Bug: Icons Stop Working after System Reload**
