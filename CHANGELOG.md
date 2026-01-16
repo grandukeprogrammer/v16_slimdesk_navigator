@@ -1,5 +1,9 @@
 # Changelog
 
+## [v3.52] - 2026-01-16
+### Fixed
+- **Installation:** Ensured `modules.txt` is completely empty (0 bytes). Previous attempt might have left a trailing character. This guarantees no module sync is attempted.
+
 ## [v3.51] - 2026-01-16
 ### Fixed
 - **Installation:** Cleared `modules.txt` as this is a pure UI/API app without DocTypes. This prevents `ModuleNotFoundError` and `TypeError` during installation by stopping Frappe from attempting to sync a non-existent sub-module.
