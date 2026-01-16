@@ -1,5 +1,9 @@
 # Changelog
 
+## [v3.50] - 2026-01-16
+### Fixed
+- **Critical:** Restored inner module directory `v16_slim_desk/v16_slim_desk` which was accidentally removed. This fixes the `ModuleNotFoundError` during installation.
+
 ## [v3.49] - 2026-01-16
 ### Fixed
 - **Installation:** Fixed incorrect path for `translations` directory (was nested too deep).
