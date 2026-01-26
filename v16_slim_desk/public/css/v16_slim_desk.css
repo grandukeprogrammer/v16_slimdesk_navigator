@@ -1,4 +1,4 @@
-/* SlimDesk Sidebar Styles - Dark Theme v3.80 */
+/* SlimDesk Sidebar Styles - Dark Theme v3.81 */
 
 body {
     padding-left: 60px !important;
@@ -154,7 +154,8 @@ body {
 /* Branding */
 .slim-branding {
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 400;
+    /* Normal weight for 'Slim' */
     color: #4a5568;
     text-align: center;
     width: 100%;
@@ -162,7 +163,7 @@ body {
     margin-bottom: 8px;
     line-height: 1;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; Removed validation since user asked for Title Case */
 }
 
 .slim-divider {
