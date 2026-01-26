@@ -1,4 +1,4 @@
-/* SlimDesk Sidebar Styles - Dark Theme v3.77 */
+/* SlimDesk Sidebar Styles - Dark Theme v3.78 */
 
 body {
     padding-left: 60px !important;
@@ -76,8 +76,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2px;
-    /* Super tight spacing */
+    margin-bottom: 3px;
+    /* Increased to 3px */
     cursor: pointer;
     transition: all 0.2s ease;
     position: relative;
@@ -91,30 +91,29 @@ body {
 }
 
 #slim-sidebar .slim-icon-wrapper.active {
-    background-color: transparent !important;
-    /* No Blue Box */
-    color: #2490ef !important;
-    /* Blue Glyph */
-    box-shadow: none;
-    /* No Shadow */
+    background-color: #2490ef !important;
+    /* Unified Blue Box */
+    color: #ffffff !important;
+    /* Unified White Icon */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #slim-sidebar .slim-icon-wrapper.active svg {
-    stroke: #2490ef !important;
+    stroke: #ffffff !important;
     /* Blue Stroke */
     fill: none;
 }
 
 #slim-sidebar .slim-icon-wrapper.active .icon use {
-    stroke: #2490ef !important;
+    stroke: #ffffff !important;
 }
 
 #slim-sidebar .slim-icon-wrapper.active .slim-text-icon {
-    color: #2490ef !important;
+    color: #ffffff !important;
 }
 
 #slim-sidebar .slim-icon-wrapper.active i {
-    color: #2490ef !important;
+    color: #ffffff !important;
 }
 
 /* Hover - Keep Dark Box */
@@ -179,7 +178,7 @@ body {
 /* Active Tile */
 .slim-icon-wrapper.active .slim-text-tile {
     background-color: transparent;
-    color: #2490ef;
+    color: #ffffff;
     /* Blue Text */
 }
 
@@ -192,8 +191,8 @@ body {
 
 /* FontAwesome Tweaks */
 .slim-icon-wrapper i {
-    font-size: 20px;
-    /* Reduced for 24px box */
+    font-size: 18px;
+    /* Slightly smaller to fit in 24px box */
     color: currentColor;
     display: inline-block;
     width: 100%;
@@ -306,13 +305,13 @@ body {
 }
 
 #slim-sidebar .slim-icon-wrapper.active .slim-svg-icon {
-    /* Blue Filter Generator for #2490ef */
-    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg) brightness(98%) contrast(93%);
+    /* Active: Pure White on Blue */
+    filter: brightness(0) invert(1);
     opacity: 1;
 }
 
 /* Ensure FA icons are also sized correctly */
 .slim-icon-wrapper i {
-    font-size: 20px !important;
+    font-size: 18px !important;
     line-height: 1;
 }
