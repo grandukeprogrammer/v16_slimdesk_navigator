@@ -1,4 +1,4 @@
-/* SlimDesk Sidebar Styles - Dark Theme v3.75 */
+/* SlimDesk Sidebar Styles - Dark Theme v3.76 */
 
 body {
     padding-left: 60px !important;
@@ -65,15 +65,16 @@ body {
 /* Icon Wrapper */
 .slim-icon-wrapper {
     flex-shrink: 0;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     padding: 0;
     /* Explicit Zero Padding */
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    /* Super tight spacing */
     cursor: pointer;
     transition: all 0.2s ease;
     position: relative;
@@ -121,8 +122,8 @@ body {
 
 .slim-home-icon,
 .slim-edit-icon {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     padding: 0;
     /* Explicit Zero Padding */
     display: flex;
@@ -137,7 +138,8 @@ body {
     height: 1px;
     width: 70%;
     background-color: #4a5568;
-    margin: 8px 0;
+    margin: 6px 0;
+    /* Reduced divider margin too */
 }
 
 /* Icons - Full Bleed 100% */
@@ -176,18 +178,19 @@ body {
 
 .slim-text-icon {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
+    /* Reduced for 28px box */
     text-transform: uppercase;
 }
 
 /* FontAwesome Tweaks */
 .slim-icon-wrapper i {
-    font-size: 28px;
+    font-size: 24px;
     color: currentColor;
     display: inline-block;
     width: 100%;
     text-align: center;
-    line-height: 32px;
+    line-height: 28px;
     /* Center Vertically */
 }
 
@@ -302,6 +305,6 @@ body {
 
 /* Ensure FA icons are also sized correctly */
 .slim-icon-wrapper i {
-    font-size: 28px !important;
+    font-size: 24px !important;
     line-height: 1;
 }
