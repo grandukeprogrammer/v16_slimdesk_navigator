@@ -1,8 +1,12 @@
 # Changelog
 
-## [v3.75] - 2026-01-26
+## [v3.79] - 2026-01-26
 ### Changed
-- **UI:** Implemented "Full Bleed" icon style. Wrappers are now 32px x 32px with **zero padding**, and icons are forced to 100% width/height. This maximizes icon visibility and removes visual gaps.
+- **UI:** Finalized "Unified Blue Box" style. Wrappers are now **24px** with **3px spacing**.
+- **UI:** Active state now displays a **Blue Background** (`#2490ef`) with a **White Icon** for *all* icon types (SVG, FontAwesome, Text).
+- **Fix:** Improved Sidebar Highlight logic ("Sticky Active State") to prevent icons from losing focus after page transitions. Routes are now aggressively normalized.
+
+## [v3.75] - 2026-01-26
 
 ## [v3.74] - 2026-01-26
 ### Changed
